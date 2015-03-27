@@ -1,0 +1,9 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 27 01:41:32 2015
+        MODULE MAKE_GRID_1D__genmod
+          INTERFACE 
+            SUBROUTINE MAKE_GRID_1D(ZND)
+              USE GRID_DIMEN
+              REAL(KIND=8) :: ZND(NX)
+            END SUBROUTINE MAKE_GRID_1D
+          END INTERFACE 
+        END MODULE MAKE_GRID_1D__genmod

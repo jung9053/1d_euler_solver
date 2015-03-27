@@ -1,0 +1,46 @@
+
+# Which compiler to use
+#FC = mpif90
+#FC = /usr/local/mpich_intel/bin/mpif90
+FC = ifort
+
+
+# What optimization level to use
+# for debugging
+#FOPTFLAGS = -check -traceback
+#FOPTFLAGS = -check -warn all -warn notruncated_source -nogen-interface -traceback
+#FOPTFLAGS = -check
+FOPTFLAGS = -O3 -xhost -ipo -warn all -warn notruncated_source 
+COPTFLAGS = 
+
+# Include directories for the cc compiler
+INCDIR = 
+
+# Which loader to use
+LD = $(FC)
+
+# In which directories to look for any additional libraries
+LIBDIR = 
+
+# What additional libraries to link the programs with (eg., -lmpi)
+#XTRALIBS = -lefence
+#XTRALIBS = -ldmalloc
+
+# What archiving to use
+ARCH = ar 
+ARCHFLAGS = cr
+
+# What to use for indexing the archive
+RANLIB = ranlib
+#RANLIB = ar -ts
+
+VERNUM = 
+
+#ifneq ($(all),0)
+#where=mk_lib
+#else
+where=mk_exe
+#endif
+
+# script for linking required library
+lnlib =./libln64

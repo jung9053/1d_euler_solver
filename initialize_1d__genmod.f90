@@ -1,0 +1,10 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 27 01:41:32 2015
+        MODULE INITIALIZE_1D__genmod
+          INTERFACE 
+            SUBROUTINE INITIALIZE_1D(ZCL,Q)
+              USE GRID_DIMEN
+              REAL(KIND=8) :: ZCL(NX-1)
+              REAL(KIND=8) :: Q(3,NX-1)
+            END SUBROUTINE INITIALIZE_1D
+          END INTERFACE 
+        END MODULE INITIALIZE_1D__genmod

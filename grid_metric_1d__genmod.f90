@@ -1,0 +1,11 @@
+        !COMPILER-GENERATED INTERFACE MODULE: Fri Mar 27 01:41:32 2015
+        MODULE GRID_METRIC_1D__genmod
+          INTERFACE 
+            SUBROUTINE GRID_METRIC_1D(ZND,DELX,ZCL)
+              USE GRID_DIMEN
+              REAL(KIND=8) :: ZND(NX)
+              REAL(KIND=8) :: DELX(NX-1)
+              REAL(KIND=8) :: ZCL(NX-1)
+            END SUBROUTINE GRID_METRIC_1D
+          END INTERFACE 
+        END MODULE GRID_METRIC_1D__genmod
